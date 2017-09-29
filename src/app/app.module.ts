@@ -21,8 +21,6 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     GoogleComponentsModule
-    // MdCheckboxModule,
-    // MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
