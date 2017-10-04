@@ -8,11 +8,13 @@
     </div>
     <hr>
     <div>
-        <md-sidenav-container class="example-container"> 
+        <md-sidenav-container class="sidebar"> 
             <md-sidenav #sidenav mode="over" opened="false" class="example-sidenav">
-
+                <md-card><a href="#">first</a></md-card>
+                <md-card><a href="#">second</a></md-card>
+                <md-card><a href="#">thrid</a></md-card>
             </md-sidenav>
-            <div>test</div>
+            <ng-content></ng-content>
         </md-sidenav-container>
     </div>
 </div>
