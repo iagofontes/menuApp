@@ -2,22 +2,18 @@
 <div>
     <div>
         <div class="example-sidenav-content">
-            <button type="button" md-button (click)="sidenav.toggle()">
+            <button type="button" md-button color='accent' (click)="sidenav.toggle()">
                 Open sidenav
             </button>
         </div>
     </div>
-    <hr>
     <div>
         <md-sidenav-container class="sidebar"> 
-            <md-sidenav #sidenav mode="side" opened="false" class="example-sidenav">
-                <!-- <md-card><a href="#">first</a></md-card>
-                <md-card><a href="#">second</a></md-card>
-                <md-card><a href="#">thrid</a></md-card> -->
+            <md-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
                 <md-nav-list>
-                    <a md-list-item href="page1.html">Página inicial</a>
-                    <a md-list-item href="page2.html">Page 2</a>
-                    <a md-list-item href="page3.html">Page 3</a>
+                    <a md-list-item href="page1.html"><label class="fieldMenu">Página inicial</label></a>
+                    <a md-list-item href="page2.html"><label class="fieldMenu">Page 2</label></a>
+                    <a md-list-item href="page3.html"><label class="fieldMenu">Page 3</label></a>
                 </md-nav-list>
             </md-sidenav>
             <forms></forms>
