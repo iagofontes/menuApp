@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material';
 import { MatCardModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
+import { MatTableModule } from '@angular/material';
 
 import { NgModule } from '@angular/core';
 
@@ -17,7 +18,8 @@ import { NgModule } from '@angular/core';
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   exports:[    
     MdCheckboxModule,
@@ -26,7 +28,8 @@ import { NgModule } from '@angular/core';
     MatIconModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
 })

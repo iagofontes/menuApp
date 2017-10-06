@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { NoConflictStyleCompatibilityMode } from '@angular/material'
 import { GoogleComponentsModule } from './google.module/google.components.module';
 
 import { MenuLateralComponent } from './menu-lateral/menulateral.component';
 import { FormComponent } from './form/form.component';
+import { TableComponent } from './table/table.component';
 
 // import { MdCheckboxModule } from "@angular/material";
 // import { MatSidenavModule } from "@angular/material";
@@ -17,12 +19,14 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     MenuLateralComponent,
-    FormComponent
+    FormComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    GoogleComponentsModule
+    GoogleComponentsModule,
+    NoConflictStyleCompatibilityMode
   ],
   providers: [],
   bootstrap: [AppComponent]

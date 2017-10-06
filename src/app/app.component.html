@@ -2,22 +2,26 @@
 <div>
     <div>
         <div class="example-sidenav-content">
-            <button type="button" md-button color='accent' (click)="sidenav.toggle()">
+            <button type="button" mat-button color='accent' (click)="sidenav.toggle()">
                 Open sidenav
             </button>
         </div>
     </div>
     <div>
-        <md-sidenav-container class="sidebar"> 
-            <md-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
-                <md-nav-list>
-                    <a md-list-item href="page1.html"><label class="fieldMenu">Página inicial</label></a>
-                    <a md-list-item href="page2.html"><label class="fieldMenu">Page 2</label></a>
-                    <a md-list-item href="page3.html"><label class="fieldMenu">Page 3</label></a>
-                </md-nav-list>
-            </md-sidenav>
-            <forms></forms>
-        </md-sidenav-container>
+        <mat-sidenav-container class="sidebar"> 
+            <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
+                <mat-nav-list>
+                    <a mat-list-item href="page1.html"><div class="fieldMenu"><mat-icon aria-hidden="true">home</mat-icon><span> Home</span></div></a>
+                    <!-- <a md-list-item href="page1.html"> <mat-icon aria-hidden="true">home</mat-icon> <label class="fieldMenu">Página inicial</label></a> -->
+                    <a mat-list-item href="page2.html"><label class="fieldMenu">Page 2</label></a>
+                    <a mat-list-item href="page3.html"><label class="fieldMenu">Page 3</label></a>
+                </mat-nav-list>
+            </mat-sidenav>
+            <div class="content">
+              <!-- <forms></forms> -->
+              <tableC></tableC>
+            </div>
+        </mat-sidenav-container>
     </div>
 </div>
     
