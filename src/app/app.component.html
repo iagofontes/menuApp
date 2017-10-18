@@ -1,33 +1,31 @@
-<div class="container">
 <div>
-    <div>
+    <!-- <div fxLayout="row" fxLayoutWrap> -->
+  <div>
+    <!-- <div fxFlex="100%">
         <div class="example-sidenav-content">
             <button type="button" mat-button color='accent' (click)="sidenav.toggle()">
                 Open sidenav
             </button>
         </div>
-    </div>
+    </div> -->
     <div>
-        <mat-sidenav-container class="sidebar"> 
-            <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav">
+        <mat-sidenav-container class="example-sidenav"> 
+            <mat-sidenav #sidenav mode="side" opened="true">
                 <mat-nav-list>
-                    <a mat-list-item href="page1.html"><div class="fieldMenu"><mat-icon aria-hidden="true">home</mat-icon><span> Home</span></div></a>
-                    <!-- <a md-list-item href="page1.html"> <mat-icon aria-hidden="true">home</mat-icon> <label class="fieldMenu">Página inicial</label></a> -->
+                    <a mat-list-item><div class="fieldMenu"><mat-icon aria-hidden="true">home</mat-icon><span> Home</span></div></a>
                     <a mat-list-item href="page2.html"><label class="fieldMenu">Page 2</label></a>
                     <a mat-list-item href="page3.html"><label class="fieldMenu">Page 3</label></a>
                 </mat-nav-list>
             </mat-sidenav>
-            <div class="content">
+            <div>
               <!-- <forms></forms> -->
-              <tableC></tableC>
+              <!-- <div> -->
+                <!-- <tableC></tableC> -->
+              <!-- </div> -->
             </div>
         </mat-sidenav-container>
     </div>
-</div>
-    
-    <!-- <menu-lateral>
-      <forms></forms>
-    </menu-lateral> -->
+  </div>
 </div>
 <!-- <forms></forms> -->
 <!--The content below is only a placeholder and can be replaced.-->

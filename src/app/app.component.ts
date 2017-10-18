@@ -13,5 +13,10 @@ export class AppComponent {
         'thumbs-up',
         sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
   }
+
+  navigate(event, index){
+    event.preventDefault();
+
+  }
   title = 'app';
 }

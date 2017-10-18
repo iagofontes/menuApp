@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { NoConflictStyleCompatibilityMode } from '@angular/material'
 import { GoogleComponentsModule } from './google.module/google.components.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MenuLateralComponent } from './menu-lateral/menulateral.component';
 import { FormComponent } from './form/form.component';
@@ -26,7 +27,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     GoogleComponentsModule,
-    NoConflictStyleCompatibilityMode
+    NoConflictStyleCompatibilityMode,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
